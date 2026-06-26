@@ -77,6 +77,9 @@ void Maze::generate() {
             grid[curr.x][curr.y] = 0;
         }
     }
+
+    grid[1][0] = 0;
+    grid[2 * height - 1][2 * width] = 0;
 }
 
 void Maze::minimap(double x, double y, double viewAngle) const {
